@@ -1,0 +1,156 @@
+/* Overlay for the cart sidebar */
+.cart-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.cart-sidebar {
+    width: 300px;
+    height: calc(100% - 120px);  /* Subtracting the navbar's height and some space for the bottom */
+    position: fixed;
+    right: 0;
+    top: 80px;  /* Offset for the navbar */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-left: 1px solid #e0e0e0;
+    overflow-y: auto;
+    z-index: 1001;  /* Ensure it's above the overlay */
+    padding-bottom: 200px;  /* Adjusted for visual balance */
+}
+
+/* Close button styling */
+.close-sidebar-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-sidebar-btn:hover {
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 65px;        
+    height: 65px;       
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cart-item h4, .cart-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.adjust-quantity {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.adjust-quantity > button {
+    background-color: #007BFF;
+    color: #fff;
+    border: 2px solid #007BFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.adjust-quantity > button:first-child {
+    margin-right: 10px; /* spacing between the minus button and the quantity display */
+}
+
+.cart-item button:hover {
+    background-color: #0056b3;
+    border-color: #003c7a;
+}
+
+.cart-summary {
+    position: fixed;
+    bottom: 60px; /* Adjust this to maintain the visual balance at the bottom */
+    width: 260px;  /* 300px minus the side paddings */
+    right: 20px;  /* Padding from the right */
+    background: #f7f7f7;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.clear-cart-btn, .checkout-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.clear-cart-btn {
+    background-color: #e74c3c;
+}
+
+.checkout-btn {
+    background-color: #007BFF;
+}
+
+.clear-cart-btn:hover {
+    background-color: #e53935;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+    border-color: #003c7a;
+}
+
+.close-clear-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 2%;
+}
+
+.close-clear-buttons button {
+    width: 48%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: 2px solid #007BFF;
+    transition: 0.3s;
+}
+
+.close-clear-buttons button:hover {
+    background-color: #0056b3;
+    border-color: #003c7a;
+}

@@ -1,0 +1,54 @@
+/* Coffee Shop Footer Styles */
+
+footer {
+    width: 100%;
+    background: #3e2723;  /* Dark brown background, evoking roasted coffee beans */
+    color: #f4e8df;  /* Light cream color, resembling frothy milk */
+    padding: 20px 0;  /* Some padding top and bottom */
+    font-size: 16px;
+    border-top: 2px solid #6d4c41; /* A slightly lighter brown for contrast */
+}
+
+footer .content {
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 20px;  /* Padding on the sides for responsiveness */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .content p, footer .content a {
+    color: #f4e8df;  /* Light cream color for text and links */
+    margin-bottom: 10px; /* Some spacing between elements */
+}
+
+footer .content a:hover {
+    text-decoration: underline;  /* Underline links on hover */
+}
+
+footer .content .box {
+    flex-basis: calc(25% - 20px);  /* Four boxes with some space between */
+    margin-right: 20px; 
+    margin-bottom: 20px;
+}
+
+footer .content .topic {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width:1100px) {
+    footer .content .box {
+        flex-basis: calc(50% - 20px);  /* Two boxes per row */
+    }
+}
+
+@media (max-width:560px) {
+    footer .content .box {
+        flex-basis: 100%;  /* One box per row */
+        margin-right: 0;
+    }
+}

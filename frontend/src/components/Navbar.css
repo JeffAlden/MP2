@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_ul li {
+  padding: 0 0.6rem;
+}
+
+.nav_ul a {
+  font-size: 1.05rem;
+  color: #000 !important;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.btn1 {
+  border: 0;
+  padding: 0.5rem 1.8rem;
+  color: #fff;
+  background-color: #01193c;
+}
+
+.btn2 {
+  border: 0;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  background-color: #f60838;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Add a default font, you can use any other font you like */
+}
+
+body {
+  background-color: #e0e0e0; /* This is a typical Neumorphic color */
+}
+
+.nav_ul li {
+  padding: 0 0.6rem;
+}
+
+.nav_ul a {
+  font-size: 1.05rem;
+  color: #000 !important;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.nav_ul a:hover {
+  transform: scale(1.05); 
+}
+
+.btn1, .btn2 {
+  border: none;
+  padding: 0.5rem 1.8rem;
+  color: #000; /* Changed the text color to match Neumorphism */
+  background-color: #e0e0e0; /* Background color is the same as the body */
+  border-radius: 10px; /* Rounded corners for Neumorphism */
+  box-shadow:  8px 8px 16px #b8b8b8, 
+              -8px -8px 16px #f8f8f8; /* Shadows for the Neumorphic effect */
+  transition: box-shadow 0.3s, transform 0.3s; /* Transitions for hover effects */
+}
+
+.btn1:hover, .btn2:hover {
+  box-shadow:  4px 4px 8px #b8b8b8, 
+              -4px -4px 8px #f8f8f8; /* Reduced shadow on hover for an "active" effect */
+  transform: scale(0.98); /* Slightly reduce size to give feedback on click */
+}
+
+

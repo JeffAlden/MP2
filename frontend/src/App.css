@@ -1,0 +1,11 @@
+ main{
+  min-height: 80vh;
+  background: #ecf0f3;
+ }
+ .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+ }

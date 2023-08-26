@@ -1,0 +1,93 @@
+/* CafeWebsite.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Neumorphism style */
+.neumorphism {
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow:  20px 20px 60px #d7d7d7, 
+              -20px -20px 60px #ffffff;
+}
+
+/* Style the header (navbar) */
+.header {
+  background-color: #f7f7f7; /* changed from #333 to give it a neumorphic feel */
+  color: #333; /* changed from #fff to contrast with the lighter background */
+  padding: 10px;
+  text-align: center;
+  box-shadow: inset 5px 5px 10px #d7d7d7, 
+              inset -5px -5px 10px #ffffff; /* inset shadow for a pressed-in look */
+}
+
+/* Style the main container */
+.cafe-webpage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style individual sections */
+.section  {
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f7f7f7; /* changed from #333 to give it a neumorphic feel */
+  color: #333; /* changed from #fff to contrast with the lighter background */
+  text-align: center;
+  padding: 10px;
+  box-shadow: inset 5px 5px 10px #d7d7d7, 
+              inset -5px -5px 10px #ffffff; /* inset shadow for a pressed-in look */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .cafe-webpage {
+    padding: 10px;
+  }
+}
+
+/* Center-align specific section titles */
+.centered-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Neumorphism style */
+.neumorphism {
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow:  20px 20px 60px #d7d7d7, 
+              -20px -20px 60px #ffffff;
+}
+
+
+.centered-list {
+  list-style-type: none; /* Removes the default bullets */
+  padding: 0;
+  text-align: center;
+}
+
+.centered-list li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em; /* Adjust as necessary for desired spacing */
+}
+
+.intro-text {
+  margin-bottom: 2em; /* Adjust as needed for desired spacing */
+}
+
