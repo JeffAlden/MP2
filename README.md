@@ -1,4 +1,4 @@
-# MP2
+# Mini Project 2
 
 Server.js: Backend entry point using Express and Node.js.
 API Endpoints: Handles frontend requests, serves data, and processes actions.
